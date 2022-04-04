@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: gold;
+
+}
+
+/* visited link */
+a:visited {
+  color: gold;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+
+}
+
+/* selected link */
+a:active {
+  color: hotpink;
+
+}
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #111;
+}
+
+</style>
+</head>
+
+
+<body style="background-color:dimgrey;">
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="cs.html">Consumer</a></li>
+  <li><a href="b2b.html">Business</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+</ul>
+
+<br>
+<br>
+<br>
+
+
+<h1><p style="color:gold;text-align:center;font-family: Arial, Helvetica, sans-serif;">Contact Us</p></h1>
+<br>
+<br>
+<br>
+<p style="color:orange;text-align:center;font-family: Arial, Helvetica, sans-serif;">Please enter your contact details and some information about your service request below and a member of the team will respond within 1 working day.</p>
+<br>
+<br>
+<br>
+
+<form id="contactform"action="/forminput.php" style="text-align: center;">
+  <label for="fname" style="color:gold;text-align:center;font-family: Arial, Helvetica, sans-serif;">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="lname" style="color:gold;text-align:center;font-family: Arial, Helvetica, sans-serif;">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="email" style="color:gold;text-align:center;font-family: Arial, Helvetica, sans-serif;">Email Address:</label><br>
+  <input type="text" id="email" name="email" value=""><br><br>
+  <label for="number" style="color:gold;text-align:center;font-family: Arial, Helvetica, sans-serif;">Phone Number:</label><br>
+  <input type="text" id="number" name="number" value=""><br><br>
+  <label for="request" style="color:gold;text-align:center;font-family: Arial, Helvetica, sans-serif;">Request:</label><br>
+  <textarea rows="12" id="request" name="request" rows="12" cols="50"> </textarea> <br><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
